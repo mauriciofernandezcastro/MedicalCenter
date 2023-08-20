@@ -1,0 +1,60 @@
+<div id="<%= dom_id treatment %>">
+  <tr>
+    <td>
+      <%= treatment.id %>
+    </td>
+    <td>
+      <%= treatment.name %>
+    </td>
+    <td>
+      <%= treatment.description %>
+    </td>
+    <td>
+      <%= treatment.date %>
+    </td>
+    <td>
+      <%= treatment.patient.name %>
+    </td>
+    <td>
+      <%= treatment.patient.age %>
+    </td>
+    <td>
+      <%= link_to treatment, class: 'btn' do %>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon
+  icon-tabler icon-tabler-eye-check" width="20" height="20" viewBox="0 0
+  24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="2" />
+          <path d="M12 19c-4 0 -7.333 -2.333 -10 -7c2.667 -4.667 6 -7
+  10 -7s7.333 2.333 10 7c-.42 .736 -.858 1.414 -1.311 2.033" />
+          <path d="M15 19l2 2l4 -4" />
+        </svg>
+        <% end %>
+    </td>
+    <td>
+      <%= link_to edit_treatment_path(treatment), class: 'btn' do %>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler
+  icon-tabler-edit" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2
+-2v-3" />
+          <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />
+          <line x1="16" y1="5" x2="19" y2="8" />
+        </svg>
+        <% end %>
+    </td>
+    <td>
+      <%= button_to treatment, method: :delete, class: 'btn' do %>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler
+icon-tabler-eraser" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M19 19h-11l-4 -4a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1
+1.41 0l5 5a1 1 0 0 1 0 1.41l-9 9" />
+          <line x1="18" y1="12.3" x2="11.7" y2="6" />
+        </svg>
+        <% end %>
+    </td>
+  </tr>
+</div>
