@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 7
 
-* System dependencies
+* Modelos, Controladores y vistas con scaffold (patient:references)
 
-* Configuration
+* 1 (patient) a N (treatments)
 
-* Database creation
+* Paginación con gema pagy 6.0
 
-* Database initialization
+* Helpers
 
-* How to run the test suite
+* Navbar bootstrap con Render
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment Render.com
 
 * ...
