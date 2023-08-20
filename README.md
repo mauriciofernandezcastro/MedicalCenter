@@ -13,7 +13,7 @@ Things you may want to cover:
 
 * Paginación con gema pagy 6.0
 
-* Helpers
+* Helpers <%= %>
 
 * Navbar bootstrap con Render
 
