@@ -15,7 +15,7 @@ Things you may want to cover:
 
 * Helpers <%= %>
 
-* Navbar bootstrap con Render
+* Navbar bootstrap con <%= Render
 
 * Services (job queues, cache servers, search engines, etc.)
 
